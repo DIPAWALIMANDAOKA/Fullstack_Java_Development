@@ -1,0 +1,48 @@
+If we want to represent group of objects
+ with unique elements ans
+  insertion order is not preserved , then we go for Set
+  
+  Childs :
+                     /
+   
+                     Hash set
+ 1. introduced in java 1.3
+ 2. underlying data structure -> hash table
+ 3. insertion order is not preserved -> based on hashcode of object
+ 4. duplicates are not allowed
+ 5. If we are trying to insert duplicate object  , we cannot get get compile time error and runtime error
+ 6. Heterogenous objects are allowed but only once
+ 7. Null insertion is possible only at once
+ 8. child interface of set
+ 
+                    
+                    linked hashSet
+1. child class of hashSet
+2. underlying data structure -> hashTable , linkedList
+3. insertion order is preserved
+4. introduced in java 1.4
+
+
+                    sorted set
+1. It is a child interface of set
+2. If we want to represent a group of unique objects where duplicates are not allowed and
+    all objects must be inserting according to some sorting technique , then we go for sorted set 
+3. That sorting order can be either default natural sorting or customized sorting order.
+4. methods :
+      1. first() => gives first element
+      2. last() => gives last element
+      3. headSet(X) => will return all the elements before x in set including x
+      4. tailSet(Y) => will return all the elements after x in set including y
+      5. SubSet(x,y)=> will give elements x to y excluding y 
+      6. Comparator() => return comparator object that describe underlying sorting technique
+                           
+                   
+                   TreeSet(c)
+1. Underlying data structures is -> balanced tree
+2. Duplicates are not allowed
+3. Insertion order is not preserved and it is based on some sorting order of objects
+4. Heterogenous objects are not allowed
+5. if we insert hetergenous object then we will get class cast exceptiom
+6. Null insertion is possible only once 
+7. child of set
+
