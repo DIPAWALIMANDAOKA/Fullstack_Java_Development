@@ -1,0 +1,49 @@
+//if we want to get objects one by one from the collection then we should user cursors
+	// types
+	// 1. Enumerator 
+	// 2. Iterator
+	// 3. ListIterator
+	
+	// Enumeration => Its an interface . we can use enumeration to get object on by one from legacy collection objects
+    // two methods: 1. hasMoreElements[] 
+    //	            2. nextElement
+	// Limitation : 1. can be used only with legacy classes . i.e. vector , stack 
+    //	            2. not a universal cursor
+    //              3. by using it we can get only read access and can't perform remove operation
+	//              4. Single direction cursor
+	
+	// Iterator => We can use iterator to get object one by one from any object
+    // universal iterator 
+    // can perform both read and remove operation on elements
+	// Limitation : 1.single direction 
+    //	            2.only read ,remove krta hai
+	// methods    : 1.next,hasNext 
+    //	            2.remove()
+	
+	// ListIterator=> Child interface of Interface of iterator.  removes the limitation of iterator
+	// can read, remove , update
+    //	bidirectional =>can move in forward as well backward
+    //	can add new elements
+    //	replacement of new element
+    //	methods : 1.hasNext()
+    //	          2.Next()
+    //	          3.nextIndex()
+    //         	  4.hasPrevious()
+    //	          5.previousIndex
+    //	          6.remove()
+    //	          7.set()
+    //	          8.add()
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
